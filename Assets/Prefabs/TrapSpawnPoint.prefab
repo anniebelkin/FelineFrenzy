@@ -102,11 +102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4e4b6e90a5adb4d9d887764a1a6dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durability: 50
-  damage: 20
   whatIDamage:
     serializedVersion: 2
     m_Bits: 1024
+  destroyedSprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!61 &5397684762395993453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -254,11 +253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ff8f4b07e3ec04a8f71a60d816aae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durability: 50
-  damage: 20
   whatIDamage:
     serializedVersion: 2
     m_Bits: 1024
+  destroyedSprite: {fileID: 877556836, guid: 550f186cca82eaf43987987f0440165e, type: 3}
 --- !u!61 &7960294458163718560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -406,11 +404,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19be0f4ff8538c48b365efde2e8a2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durability: 50
-  damage: 20
   whatIDamage:
     serializedVersion: 2
     m_Bits: 1024
+  destroyedSprite: {fileID: 0}
 --- !u!61 &2372531939548232767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -558,11 +555,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19be0f4ff8538c48b365efde2e8a2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durability: 50
-  damage: 20
   whatIDamage:
     serializedVersion: 2
     m_Bits: 1024
+  destroyedSprite: {fileID: 0}
 --- !u!61 &1153455826820688048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -710,11 +706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ff8f4b07e3ec04a8f71a60d816aae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durability: 50
-  damage: 20
   whatIDamage:
     serializedVersion: 2
     m_Bits: 1024
+  destroyedSprite: {fileID: 2064578927, guid: 550f186cca82eaf43987987f0440165e, type: 3}
 --- !u!61 &1644985006516802128
 BoxCollider2D:
   m_ObjectHideFlags: 0
