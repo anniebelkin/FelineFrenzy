@@ -40,6 +40,6 @@ public class Player : Spawner<PlayableCharacter>
             Debug.LogError("Active Character Not Set.");
             return false;
         }
-        return true;
+        return !activeCharacter.IsDead();
     }
 }

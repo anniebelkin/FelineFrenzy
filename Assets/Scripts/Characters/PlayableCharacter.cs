@@ -5,6 +5,9 @@ using UnityEngine;
 /// </summary>
 public abstract class PlayableCharacter : MonoBehaviour, IDamagable
 {
+    public HealthBar healthBar;
+    public Sprite ghostSprite;
+
     [SerializeField, Tooltip("Speed of the character.")]
     protected int moveSpeed;
 
@@ -20,10 +23,12 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     {
         playerRb = GetComponentInParent<Rigidbody2D>();
         currentHp = maxHp;
+        healthBar.SetMaxHealth(maxHp);
     }
     public void TakeDamage(int damagePoints)
     {
         currentHp = Mathf.Max(0, currentHp - damagePoints);
+        healthBar.SetHealth(currentHp);
         if (currentHp == 0) 
         {
             Die();
@@ -32,7 +37,7 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
 
     public void Die()
     {
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().sprite = ghostSprite;
     }
 
     public void Movement()
@@ -44,6 +49,11 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
             Vector2 direction = new Vector2(moveHorizontal, moveVertical).normalized;
             playerRb.MovePosition(playerRb.position + direction * moveSpeed * Time.deltaTime);
         }
+    }
+
+    public bool IsDead()
+    {
+        return currentHp == 0;
     }
 
     public abstract void SpecialAbillity();
