@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : Spawner<PlayableCharacter>
 {
+    public LayerMask trapsLayer;
     private PlayableCharacter activeCharacter
     {
         get { return currentSpawnable; }
@@ -14,6 +15,10 @@ public class Player : Spawner<PlayableCharacter>
         if (Input.GetKeyDown(KeyCode.Q))
         {
             ChangeToNextSpawnable();
+        }
+        if (Input.GetKeyDown(KeyCode.E) && IsActiveCharacterSet())
+        {
+            activeCharacter.SpecialAbillity();
         }
     }
 

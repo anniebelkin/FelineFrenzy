@@ -23,7 +23,7 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     }
     public void TakeDamage(int damagePoints)
     {
-        currentHp = Mathf.Max(0, currentHp - damagePoints); ;
+        currentHp = Mathf.Max(0, currentHp - damagePoints);
         if (currentHp == 0) 
         {
             Die();
@@ -46,11 +46,21 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
         }
     }
 
-    protected abstract void SpecialAbillity();
+    public abstract void SpecialAbillity();
 
     protected void ApplyDamage(IDamagable damagable) 
     {
         damagable.TakeDamage(basicAttack);
+    }
+
+    protected Trap FindNearbyTrap()
+    {
+        Collider2D trap = Physics2D.OverlapCircle(transform.position, 1.0f, LayerMask.GetMask("Traps"));
+        if (trap != null)
+        {
+            return trap.GetComponent<Trap>();
+        }
+        return null;
     }
 
     private bool IsPlayerRbSet()

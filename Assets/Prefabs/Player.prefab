@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4225776476559549412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c076148a860f727418260efdeadbba9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 50
   moveSpeed: 5
 --- !u!61 &4707912926120031516
 BoxCollider2D:
@@ -251,7 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923d049662e79b043bad18d2e5a01a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 50
   moveSpeed: 3
 --- !u!61 &9074750471072937026
 BoxCollider2D:
@@ -400,7 +398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c249e534c35ad428d140392aaa477f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 50
   moveSpeed: 4
 --- !u!61 &772256543214845219
 BoxCollider2D:
@@ -504,7 +501,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8868192580367557829}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -592,3 +589,6 @@ MonoBehaviour:
   - {fileID: 2711733031718583978}
   - {fileID: 8060176757428523377}
   - {fileID: 3936874383925571928}
+  trapsLayer:
+    serializedVersion: 2
+    m_Bits: 0
