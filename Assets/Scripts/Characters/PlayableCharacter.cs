@@ -5,6 +5,9 @@ using UnityEngine;
 /// </summary>
 public abstract class PlayableCharacter : MonoBehaviour, IDamagable
 {
+    public HealthBar healthBar;
+    public Sprite ghostSprite;
+
     [SerializeField, Tooltip("Speed of the character.")]
     protected int moveSpeed;
 
@@ -20,10 +23,12 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     {
         playerRb = GetComponentInParent<Rigidbody2D>();
         currentHp = maxHp;
+        healthBar.SetMaxHealth(maxHp);
     }
     public void TakeDamage(int damagePoints)
     {
-        currentHp = Mathf.Max(0, currentHp - damagePoints); ;
+        currentHp = Mathf.Max(0, currentHp - damagePoints);
+        healthBar.SetHealth(currentHp);
         if (currentHp == 0) 
         {
             Die();
@@ -32,7 +37,7 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
 
     public void Die()
     {
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().sprite = ghostSprite;
     }
 
     public void Movement()
@@ -46,11 +51,26 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
         }
     }
 
-    protected abstract void SpecialAbillity();
+    public bool IsDead()
+    {
+        return currentHp == 0;
+    }
+
+    public abstract void SpecialAbillity();
 
     protected void ApplyDamage(IDamagable damagable) 
     {
         damagable.TakeDamage(basicAttack);
+    }
+
+    protected Trap FindNearbyTrap()
+    {
+        Collider2D trap = Physics2D.OverlapCircle(transform.position, 1.0f, LayerMask.GetMask("Traps"));
+        if (trap != null)
+        {
+            return trap.GetComponent<Trap>();
+        }
+        return null;
     }
 
     private bool IsPlayerRbSet()

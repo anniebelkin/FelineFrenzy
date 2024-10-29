@@ -33,6 +33,11 @@ public abstract class Trap : MonoBehaviour ,IDamagable
         GetComponent<Collider2D>().enabled = false;
     }
 
+    public void ApplyDamageBack(IDamagable damagable)
+    {
+        damagable.TakeDamage(damage / 2);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (((1 << collision.gameObject.layer) & whatIDamage) != 0)

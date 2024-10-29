@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class WhiteCat : PlayableCharacter
 {
-    protected override void SpecialAbillity()
+    public override void SpecialAbillity()
     {
-        
+        Trap trap = FindNearbyTrap();
+        if (trap != null)
+        {
+            if (trap is Snack snack)
+            {
+                snack.TakeDamage(SpecialAttack);
+            }
+            else
+            {
+                ApplyDamage(trap);
+                trap.ApplyDamageBack(this);
+            }
+        }
     }
 }
