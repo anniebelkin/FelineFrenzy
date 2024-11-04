@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fd2552b04b8c154586d9e285e711c17
+guid: ff858c0e1bce9374f95cc264673a77b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,28 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat-orange-side_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 439c132e030af0b41ae9865053556334
-      internalID: 91022420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat-orange-side_1
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_0"
       rect:
         serializedVersion: 2
         x: 16
@@ -132,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73652ca96348f24b88b05e5dc3155e9
-      internalID: -1561827767
+      spriteID: 8486d3503b70c0a469e7cc601f3b2a30
+      internalID: -152723516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_2
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_1"
       rect:
         serializedVersion: 2
         x: 32
@@ -153,14 +132,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d9a4382e7d0bb2419229d9e5dc26b46
-      internalID: 581757983
+      spriteID: 6589667697d380e4a9a5a8061ce0b244
+      internalID: -866876372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_3
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_2"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406a3d3cacd4ed645bca6fd3fe934b0d
+      internalID: 26731352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f7a99bb36e64b4e8f6faeaae25662e
-      internalID: -44229399
+      spriteID: eec4c1dd1895a2043805ec0c9f6c5518
+      internalID: -114529167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_4
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_4"
       rect:
         serializedVersion: 2
         x: 16
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e86572e21df7964aa2387a915844520
-      internalID: 325962943
+      spriteID: f2e15728fa12a7541a648fb7fa815984
+      internalID: 1771806582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_5
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_5"
       rect:
         serializedVersion: 2
         x: 32
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ccdc2bd3e7254e489d6d629c76aaeef
-      internalID: 1372434058
+      spriteID: 3b32ea14c4ce2c94f84ae130b5d0ffa8
+      internalID: -7709045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_6
+      name: "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_6"
       rect:
         serializedVersion: 2
         x: 48
@@ -237,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 675930daaa6e2dd4791ef16fda31ec60
-      internalID: -1745604966
+      spriteID: 0010a68886374cd409cfd93d2a667a45
+      internalID: -346068134
       vertices: []
       indices: 
       edges: []
@@ -254,13 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat-orange-side_0: 91022420
-      cat-orange-side_1: -1561827767
-      cat-orange-side_2: 581757983
-      cat-orange-side_3: -44229399
-      cat-orange-side_4: 325962943
-      cat-orange-side_5: 1372434058
-      cat-orange-side_6: -1745604966
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_0": -152723516
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_1": -866876372
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_2": 26731352
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_3": -114529167
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_4": 1771806582
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_5": -7709045
+      "\u200F\u200Fcat-orange-side - \u05E2\u05D5\u05EA\u05E7_6": -346068134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4227589110040240958}
   - component: {fileID: 2711733031718583978}
   - component: {fileID: 4707912926120031516}
+  - component: {fileID: 7519347531762752712}
   m_Layer: 10
   m_Name: GingerCat
   m_TagString: Untagged
@@ -106,6 +107,8 @@ MonoBehaviour:
   healthBar: {fileID: 3299323253212414393}
   ghostSprite: {fileID: 369858404, guid: 8c6001b4467e20348bc1ddf16bc61d4f, type: 3}
   moveSpeed: 5
+  animator: {fileID: 0}
+  animatorController: {fileID: 0}
 --- !u!61 &4707912926120031516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,6 +154,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0.2
+--- !u!95 &7519347531762752712
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218456490724247176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d81e03d5157fe324a96959500c2f4716, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &477260210304295658
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +765,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2090848136632359345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,9 +928,11 @@ MonoBehaviour:
   - {fileID: 2711733031718583978}
   - {fileID: 8060176757428523377}
   - {fileID: 3936874383925571928}
+  animator: {fileID: 0}
   trapsLayer:
     serializedVersion: 2
     m_Bits: 0
+  input: {x: 0, y: 0}
 --- !u!1001 &1826642821339152221
 PrefabInstance:
   m_ObjectHideFlags: 0

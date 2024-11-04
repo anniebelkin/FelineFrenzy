@@ -433,7 +433,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1223041679
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5, y: 0.5, z: 0}
@@ -1125,6 +1125,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2711733031718583978, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: ghostSprite
+      value: 
+      objectReference: {fileID: -989168878, guid: b3327636bb0f83b47b374f901f682431, type: 3}
+    - target: {fileID: 3936874383925571928, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: ghostSprite
+      value: 
+      objectReference: {fileID: -1591931022, guid: b3327636bb0f83b47b374f901f682431, type: 3}
     - target: {fileID: 4227589110040240958, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_SortingLayer
       value: 3
@@ -1145,6 +1153,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8060176757428523377, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: ghostSprite
+      value: 
+      objectReference: {fileID: -989168878, guid: b3327636bb0f83b47b374f901f682431, type: 3}
     - target: {fileID: 8868192580367557829, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1227,7 +1239,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1223041679
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1922696265, guid: 550f186cca82eaf43987987f0440165e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1405,7 +1417,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 565690871
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1591931022, guid: b3327636bb0f83b47b374f901f682431, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

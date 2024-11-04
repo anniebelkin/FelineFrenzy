@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fd2552b04b8c154586d9e285e711c17
+guid: cd20ae45896899b4485c9e505778ee71
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,28 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat-orange-side_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 439c132e030af0b41ae9865053556334
-      internalID: 91022420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat-orange-side_1
+      name: cat-black-side 1_0
       rect:
         serializedVersion: 2
         x: 16
@@ -132,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73652ca96348f24b88b05e5dc3155e9
-      internalID: -1561827767
+      spriteID: 446d069371b716a4084312a6be3c2bc5
+      internalID: 833168432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_2
+      name: cat-black-side 1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -153,14 +132,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d9a4382e7d0bb2419229d9e5dc26b46
-      internalID: 581757983
+      spriteID: 8379389de5fc2a146b3d3a8a8e1ded03
+      internalID: 996608496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_3
+      name: cat-black-side 1_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab92fde9040942c4a9944389817cf973
+      internalID: 818517192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat-black-side 1_3
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f7a99bb36e64b4e8f6faeaae25662e
-      internalID: -44229399
+      spriteID: 4c81f47915d795f4cab1bd0b5ead732b
+      internalID: -902110324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_4
+      name: cat-black-side 1_4
       rect:
         serializedVersion: 2
         x: 16
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e86572e21df7964aa2387a915844520
-      internalID: 325962943
+      spriteID: 80f19bbd4b015e54ca650492a896463c
+      internalID: 483153162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_5
+      name: cat-black-side 1_5
       rect:
         serializedVersion: 2
         x: 32
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ccdc2bd3e7254e489d6d629c76aaeef
-      internalID: 1372434058
+      spriteID: a15d8e113b1bd4f4e9d687d59f64f3e8
+      internalID: 847987118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat-orange-side_6
+      name: cat-black-side 1_6
       rect:
         serializedVersion: 2
         x: 48
@@ -237,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 675930daaa6e2dd4791ef16fda31ec60
-      internalID: -1745604966
+      spriteID: 1d5c13fef6397df4fa3b57144655c760
+      internalID: -1637293883
       vertices: []
       indices: 
       edges: []
@@ -254,13 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat-orange-side_0: 91022420
-      cat-orange-side_1: -1561827767
-      cat-orange-side_2: 581757983
-      cat-orange-side_3: -44229399
-      cat-orange-side_4: 325962943
-      cat-orange-side_5: 1372434058
-      cat-orange-side_6: -1745604966
+      cat-black-side 1_0: 833168432
+      cat-black-side 1_1: 996608496
+      cat-black-side 1_2: 818517192
+      cat-black-side 1_3: -902110324
+      cat-black-side 1_4: 483153162
+      cat-black-side 1_5: 847987118
+      cat-black-side 1_6: -1637293883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

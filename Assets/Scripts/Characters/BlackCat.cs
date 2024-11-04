@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BlackCat : PlayableCharacter
 {
+
     public override void SpecialAbillity()
     {
         Trap trap = FindNearbyTrap();
