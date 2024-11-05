@@ -1064,19 +1064,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 345459830038941075, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 345459830038941075, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 345459830038941075, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1101
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 345459830038941075, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 514
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 345459830038941075, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_LocalScale.x
@@ -1218,6 +1218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2299386750058523636, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1069060399
+      objectReference: {fileID: 0}
     - target: {fileID: 2637577872523695118, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: characters.Array.size
       value: 3
@@ -1245,6 +1249,10 @@ PrefabInstance:
     - target: {fileID: 3028243920231328098, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251070611990530255, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1069060399
       objectReference: {fileID: 0}
     - target: {fileID: 3934245883823419589, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_TagString
@@ -1325,6 +1333,10 @@ PrefabInstance:
     - target: {fileID: 7855064868246305165, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_PixelPerfect
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855064868246305165, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1069060399
       objectReference: {fileID: 0}
     - target: {fileID: 7855064868246305165, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_VertexColorAlwaysGammaSpace

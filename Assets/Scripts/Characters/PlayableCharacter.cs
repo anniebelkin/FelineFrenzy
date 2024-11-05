@@ -7,6 +7,7 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
 {
     public HealthBar healthBar;
     public Sprite ghostSprite;
+    public RuntimeAnimatorController animatorController;
 
     [SerializeField, Tooltip("Speed of the character.")]
     protected int moveSpeed;
@@ -17,14 +18,25 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     protected int maxHp = 50;
     protected int currentHp;
 
+    protected Animator animator;
+
     private Rigidbody2D playerRb;
 
+    private bool isMoving = false;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+        // Assign the character's specific Animator Controller to the Animator
+        animator.runtimeAnimatorController = animatorController;
+    }
     void Start()
     {
         playerRb = GetComponentInParent<Rigidbody2D>();
         currentHp = maxHp;
         healthBar.SetMaxHealth(maxHp);
     }
+
     public void TakeDamage(int damagePoints)
     {
         currentHp = Mathf.Max(0, currentHp - damagePoints);
@@ -38,16 +50,36 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     public void Die()
     {
         GetComponent<SpriteRenderer>().sprite = ghostSprite;
+        animator.SetBool("isMoving", false);
+        animator.SetBool("isDead", true);
     }
 
     public void Movement()
     {
         if (IsPlayerRbSet())
         {
+
             float moveHorizontal = Input.GetAxis("Horizontal");
             float moveVertical = Input.GetAxis("Vertical");
             Vector2 direction = new Vector2(moveHorizontal, moveVertical).normalized;
             playerRb.MovePosition(playerRb.position + direction * moveSpeed * Time.deltaTime);
+
+            if (animator != null)
+            {
+                isMoving = true;
+                animator.SetBool("isMoving", true);
+                animator.SetFloat("moveX", moveHorizontal);
+                animator.SetFloat("moveY", moveVertical);
+            }
+        }
+    }
+
+    public void Idle()
+    {
+        if (isMoving)
+        {
+            animator.SetBool("isMoving", false);
+            isMoving = false;
         }
     }
 

@@ -105,10 +105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 3299323253212414393}
-  ghostSprite: {fileID: 369858404, guid: 8c6001b4467e20348bc1ddf16bc61d4f, type: 3}
+  ghostSprite: {fileID: -1591931022, guid: b3327636bb0f83b47b374f901f682431, type: 3}
+  animatorController: {fileID: 9100000, guid: d81e03d5157fe324a96959500c2f4716, type: 2}
   moveSpeed: 5
-  animator: {fileID: 0}
-  animatorController: {fileID: 0}
 --- !u!61 &4707912926120031516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -289,6 +288,7 @@ GameObject:
   - component: {fileID: 6227143795026909342}
   - component: {fileID: 3936874383925571928}
   - component: {fileID: 9074750471072937026}
+  - component: {fileID: 2238765755664262491}
   m_Layer: 10
   m_Name: WhiteCat
   m_TagString: Untagged
@@ -381,7 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 6469681140974789929}
-  ghostSprite: {fileID: 570073754, guid: b55e81eec275e0c4384aea1811a77592, type: 3}
+  ghostSprite: {fileID: -1591931022, guid: b3327636bb0f83b47b374f901f682431, type: 3}
+  animatorController: {fileID: 9100000, guid: 454bbc3e3e00a274a9bedcf9beb1fda0, type: 2}
   moveSpeed: 3
 --- !u!61 &9074750471072937026
 BoxCollider2D:
@@ -428,6 +429,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0.2
+--- !u!95 &2238765755664262491
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809098935468631303}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b1e176fe3d42eff4184f27054ce859bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4099026926994839213
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +564,7 @@ GameObject:
   - component: {fileID: 1267016583515257073}
   - component: {fileID: 8060176757428523377}
   - component: {fileID: 772256543214845219}
+  - component: {fileID: 8623430499759481114}
   m_Layer: 10
   m_Name: BlackCat
   m_TagString: Untagged
@@ -634,7 +657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1532552573975492313}
-  ghostSprite: {fileID: -107880629, guid: 56d2d5d27232cdb4892a088354b9dce1, type: 3}
+  ghostSprite: {fileID: -1591931022, guid: b3327636bb0f83b47b374f901f682431, type: 3}
+  animatorController: {fileID: 9100000, guid: 253d24ba2cdbfa74d891fd5b500851ef, type: 2}
   moveSpeed: 4
 --- !u!61 &772256543214845219
 BoxCollider2D:
@@ -681,6 +705,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0.2
+--- !u!95 &8623430499759481114
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6349936220240155319}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 346b1f23c16129842a81a597e0c418e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8426680255420090259
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +810,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2090848136632359345
 MonoBehaviour:
   m_ObjectHideFlags: 0

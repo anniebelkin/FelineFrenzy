@@ -1125,10 +1125,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2299386750058523636, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1069060399
+      objectReference: {fileID: 0}
     - target: {fileID: 2711733031718583978, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: ghostSprite
       value: 
       objectReference: {fileID: -989168878, guid: b3327636bb0f83b47b374f901f682431, type: 3}
+    - target: {fileID: 3251070611990530255, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1069060399
+      objectReference: {fileID: 0}
     - target: {fileID: 3936874383925571928, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: ghostSprite
       value: 
@@ -1152,6 +1160,14 @@ PrefabInstance:
     - target: {fileID: 6349936220240155319, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593837263652564395, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855064868246305165, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1069060399
       objectReference: {fileID: 0}
     - target: {fileID: 8060176757428523377, guid: a515f444df0c63d468e721f9b8d21324, type: 3}
       propertyPath: ghostSprite

@@ -137,7 +137,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2ba8d4c4472c32b45aa4fc8d5e803fab, type: 2}
+    m_Motion: {fileID: 7400000, guid: 4d5bf04c5bd21f14c97f6c6754d59856, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -145,7 +145,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6b0a74ddcd117884a961dc7ee49d8960, type: 2}
+    m_Motion: {fileID: 7400000, guid: 58d141f0271401445867377259a7c49a, type: 2}
     m_Threshold: 0.25
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -153,7 +153,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: f269792d4170a094f9bffb9ab0b8a6c5, type: 2}
+    m_Motion: {fileID: 7400000, guid: 3441268870fe6304f9e3f63dbbcc646d, type: 2}
     m_Threshold: 0.5
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -161,7 +161,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3d1cba5afa7bfa14194b179e1bf26a05, type: 2}
+    m_Motion: {fileID: 7400000, guid: b219e57de9394774894a2e94bcc1eada, type: 2}
     m_Threshold: 0.75
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -175,13 +175,30 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 1
+--- !u!1109 &-2533345928979017216
+AnimatorTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isDead
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 3500092048061525246}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 1
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GingerCat
+  m_Name: BlackCat
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: CharacterID
@@ -250,7 +267,7 @@ AnimatorStateMachine:
   - {fileID: -6987927026229357259}
   - {fileID: -7244874932283277850}
   m_EntryTransitions:
-  - {fileID: 4322053357912187055}
+  - {fileID: -2533345928979017216}
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 100, y: -140, z: 0}
@@ -293,7 +310,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: fe133838ccade824594fdd78a35d6b1d, type: 2}
+    m_Motion: {fileID: 7400000, guid: aebf57db065ace24eb893fc66d293ed8, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: -1}
     m_TimeScale: 2
@@ -301,7 +318,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ea550e5632b4577418e1929201788e22, type: 2}
+    m_Motion: {fileID: 7400000, guid: b7d2d2346eea54d459c2d587c8ecf2b4, type: 2}
     m_Threshold: 0.25
     m_Position: {x: 0, y: 1}
     m_TimeScale: 2
@@ -309,7 +326,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c81f031984c52da42973902ab8efd7eb, type: 2}
+    m_Motion: {fileID: 7400000, guid: 81d3f7a732b8d524f9389428b64fda37, type: 2}
     m_Threshold: 0.5
     m_Position: {x: -1, y: 0}
     m_TimeScale: 2
@@ -317,7 +334,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2e9c1f40ea846fc408cacbde0b5311b2, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6af8b538b9487bc4ea8a099e2d4b5315, type: 2}
     m_Threshold: 0.75
     m_Position: {x: 1, y: 0}
     m_TimeScale: 2
@@ -331,20 +348,3 @@ BlendTree:
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 1
---- !u!1109 &4322053357912187055
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: isDead
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3500092048061525246}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1

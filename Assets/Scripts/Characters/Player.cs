@@ -8,8 +8,6 @@ public class Player : Spawner<PlayableCharacter>
     private bool isMoving;
     public LayerMask trapsLayer;
     public Vector2 input; // Store movement direction
-    public List<PlayableCharacter> characters; // List of available characters
-    private PlayableCharacter currentCharacter; // Currently activ
 
     private void Awake()
     {
@@ -39,39 +37,17 @@ public class Player : Spawner<PlayableCharacter>
     {
         if (IsActiveCharacterSet())
         {
-            if (!isMoving)
+            if ((Input.GetKey(KeyCode.W) ||
+                Input.GetKey(KeyCode.A) ||
+                Input.GetKey(KeyCode.S) ||
+                Input.GetKey(KeyCode.D)))
             {
-                input.x = Input.GetAxisRaw("Horizontal");
-                input.y = Input.GetAxisRaw("Vertical");
-
-                Debug.Log("this is input.x" + input.x);
-                Debug.Log("this is input.y" + input.y);
-
-
-                if (input.x != 0) input.y = 0;
-               
-
-
-                if (input != Vector2.zero)
-                {
-                    // Move the character
-                    activeCharacter.Movement();
-
-                    animator.SetFloat("moveX", input.x);
-                    animator.SetFloat("moveY", input.y);
-
-                    var targetPos = transform.position;
-                    targetPos.x = input.x;
-                    targetPos.y = input.y; 
-                }
-                else
-                {
-                    animator.SetBool("IsMoving", false);
-                }
+                activeCharacter.Movement();
             }
-          
-
-           
+            else 
+            {
+                activeCharacter.Idle();
+            }
         }
     }
 
