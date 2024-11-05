@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner<T> : MonoBehaviour where T : MonoBehaviour
 {
-    [SerializeField] List<T> spawnables;
+    [SerializeField] protected List<T> spawnables;
     protected T currentSpawnable;
     private int currentIndex = 0;
     
@@ -14,26 +14,27 @@ public class Spawner<T> : MonoBehaviour where T : MonoBehaviour
         {
             HideSpawner();
             currentIndex = Random.Range(0, spawnables.Count);
-            Swap();
+            Swap(spawnables[currentIndex]);
         }
     }
 
-    protected void ChangeToNextSpawnable()
+    protected T GetNextSpawnable()
     {
         if (!IsListEmpty())
         {
             currentIndex = (currentIndex + 1) % spawnables.Count;
-            Swap();
+            return spawnables[currentIndex];
         }
+        return null;
     }
 
-    private void Swap()
+    protected void Swap(T nextSpawnable)
     {
         if (currentSpawnable != null)
         {
             currentSpawnable.gameObject.SetActive(false);
         }
-        currentSpawnable = spawnables[currentIndex];
+        currentSpawnable = nextSpawnable;
         currentSpawnable.gameObject.SetActive(true);
     }
     

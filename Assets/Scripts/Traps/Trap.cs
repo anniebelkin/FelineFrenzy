@@ -12,6 +12,9 @@ public abstract class Trap : MonoBehaviour ,IDamagable
     public LayerMask whatIDamage;
     public Sprite destroyedSprite;
 
+    public AudioSource audioSource;
+    public AudioClip destroyedSound;
+
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
@@ -38,6 +41,10 @@ public abstract class Trap : MonoBehaviour ,IDamagable
 
     public virtual void Die()
     {
+        if (destroyedSound != null)
+        {
+            audioSource.PlayOneShot(destroyedSound);
+        }
         GetComponent<SpriteRenderer>().sprite = destroyedSprite;
         GetComponent<Collider2D>().enabled = false;
     }

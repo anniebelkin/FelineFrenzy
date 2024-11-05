@@ -7,6 +7,7 @@ public class GingerCat : PlayableCharacter
 
     public override void SpecialAbillity()
     {
+        AttackSound();
         Trap trap = FindNearbyTrap();
         if (trap != null) 
         {

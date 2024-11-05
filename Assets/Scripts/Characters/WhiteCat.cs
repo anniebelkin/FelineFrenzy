@@ -7,6 +7,7 @@ public class WhiteCat : PlayableCharacter
 
     public override void SpecialAbillity()
     {
+        AttackSound();
         Trap trap = FindNearbyTrap();
         if (trap != null)
         {

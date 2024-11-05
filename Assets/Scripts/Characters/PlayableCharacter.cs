@@ -9,6 +9,10 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     public Sprite ghostSprite;
     public RuntimeAnimatorController animatorController;
 
+    public AudioSource audioSource;
+    public AudioClip attackSound;
+    public AudioClip hurtSound;
+
     [SerializeField, Tooltip("Speed of the character.")]
     protected int moveSpeed;
 
@@ -16,7 +20,7 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
     protected int SpecialAttack = 50;
 
     protected int maxHp = 50;
-    protected int currentHp;
+    protected int currentHp = -1;
 
     protected Animator animator;
 
@@ -39,6 +43,7 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damagePoints)
     {
+        HurtSound();
         currentHp = Mathf.Max(0, currentHp - damagePoints);
         healthBar.SetHealth(currentHp);
         if (currentHp == 0) 
@@ -103,6 +108,22 @@ public abstract class PlayableCharacter : MonoBehaviour, IDamagable
             return trap.GetComponent<Trap>();
         }
         return null;
+    }
+
+    protected void AttackSound()
+    {
+        if (attackSound != null)
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
+    }
+
+    protected void HurtSound()
+    {
+        if (hurtSound != null)
+        {
+            audioSource.PlayOneShot(hurtSound);
+        }
     }
 
     private bool IsPlayerRbSet()

@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Spawner<PlayableCharacter>
 {
     public Animator animator;
-    private bool isMoving;
     public LayerMask trapsLayer;
-    public Vector2 input; // Store movement direction
+
+    public AudioClip gameOverSound;
+    public AudioSource audioSource;
 
     private void Awake()
     {
@@ -24,7 +26,8 @@ public class Player : Spawner<PlayableCharacter>
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            ChangeToNextSpawnable();
+            ChangeToNextCharacter();
+
         }
         if (Input.GetKeyDown(KeyCode.E) && IsActiveCharacterSet())
         {
@@ -59,5 +62,40 @@ public class Player : Spawner<PlayableCharacter>
             return false;
         }
         return !activeCharacter.IsDead();
+    }
+
+    private void ChangeToNextCharacter() 
+    {
+        int numOfCharacters = spawnables.Count;
+        for (int i = 0; i < numOfCharacters; i++)
+        {
+            PlayableCharacter next= GetNextSpawnable();
+            if (!next.IsDead())
+            {
+                Swap(next);
+                return;
+            }
+        }
+        RestartGame();
+    }
+
+    private void RestartGame()
+    {
+        if (audioSource != null && gameOverSound != null)
+        {
+            audioSource.PlayOneShot(gameOverSound);
+        }
+
+        Debug.Log("All characters are dead! Restarting the game...");
+
+        // Reload the current scene
+        Invoke("ReloadScene", 3f);
+    }
+
+    private void ReloadScene()
+    {
+        // Reload the current scene
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 }
